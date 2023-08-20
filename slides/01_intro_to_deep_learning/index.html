@@ -229,55 +229,6 @@ Open-AI GPT-3, or DALL-E: https://openai.com/blog/dall-e/
 
 Combination of linear (parametrized) and non-linear functions 线性（参数化）和非线性函数的组合
 ---
-<!-- # Computation Graph
-
-.center[
-<img src="images/computation_graph_complicated.png" style="width: 600px;" /><br/><br/>
-]
-
-Not only sequential application of functions
----
-# Computation Graph
-
-.center[
-<img src="images/computation_graph_backprop.png" style="width: 600px;" /><br/><br/>
-]
-
-Automatic computation of gradients: all modules are **differentiable**!
-
---
-
-Theano (now Aesara), **Tensorflow 1**, etc. build a static computation graph via static declarations.
-
---
-
-**Tensorflow 2**, **PyTorch**, **JAX**, etc. rely on dynamic differentiable modules: "define-by-run".
-
---
-
-Vector computation on **CPU** and accelerators (**GPU** and **TPU**).
-
----
-# Computation Graph
-
-.center[
-<img src="images/computation_graph_backprop.png" style="width: 600px;" /><br/><br/>
-]
-
-Simple keras implementation
-
-```py
-model = Sequential()
-model.add(Dense(H, input_dim=N))  # defines W0
-model.add(Activation("tanh"))
-model.add(Dense(K))               # defines W1
-model.add(Activation("softmax"))
-```
-
----
-class: middle, center
-
-# Lab 1: here in 15min! -->
 
     </textarea>
     <style TYPE="text/css">
